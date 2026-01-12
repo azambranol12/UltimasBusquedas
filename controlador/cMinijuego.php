@@ -16,6 +16,12 @@ class CMinijuego
     }
 
     public function listarMinijuego(){
-        $this->modMinijuego->listarMinijuegi();
+        $this->modMinijuego->listarMinijuegos();
+    }
+
+    public function InsertMasivo()
+    {
+        $this->modMinijuego->insercionMasiva();
+        $this->vista = '';
     }
 }

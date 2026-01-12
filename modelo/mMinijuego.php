@@ -21,7 +21,7 @@ class Minijuego extends Conexion{
         }
     }
 
-    public function listarMinijuego() {
+    public function listarMinijuegos() {
         return $this->conexion->query("SELECT * FROM Minijuegos")->fetchAll(PDO::FETCH_ASSOC);
     }
 }
