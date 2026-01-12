@@ -1,6 +1,6 @@
 <?php
-    DEFINE ("servidor", "local");
+    DEFINE ("servidor", "localhost");
     DEFINE ("usuario", "root");
     DEFINE ("password", "");
-    DEFINE ("nombreDB", "ultimasBusquedas");
+    DEFINE ("nombreDB", "ultimasbusquedas");
 ?>"

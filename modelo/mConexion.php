@@ -1,13 +1,13 @@
 <?php
 
-require_once __DIR__ '/../config/configdb.php';
+require_once __DIR__ .'/../config/configdb.php';
 
 class Conexion {
 
     protected $conexion;
 
-    public function __construc(){
-        $rhis->conexion = new PDO(
+    public function __construct(){
+        $this->conexion = new PDO(
             "mysql:host=" . servidor .
             ";dbname=" . nombreDB . ";charset=UTF8",
             usuario,
@@ -18,10 +18,10 @@ class Conexion {
                 PDO::ATTR_EMULATE_PREPARES => false
             ]
         );
-
+     }
         public function __destruct(){
             $this->conexion = null;
         }
-    }
+   
 }
 ?>

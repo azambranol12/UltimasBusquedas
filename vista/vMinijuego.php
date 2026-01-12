@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Selección de Minijuego</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vista/style.css">
 </head>
 <body>
 
     <div class="container">
         <h1>Selecciona un minijuego</h1>
 
-        <form action="tu_controlador.php" method="GET" class="selector-juego">
+        <form action="index.php?c=Juego&m=juego&id=<?= $juego['id'] ?>&nombre=<?= $juego['nombre'] ?>" method="GET">
             <select name="id_juego" id="juegos">
                 <?php
-                    echo '<option value="'.$juego['id'].'">'.$juego['nombre'].'</option>'
+                    foreach ($juegos as $juego) {
+                        echo '<option value="'.$juego['id'].'">'.$juego['nombre'].'</option>';
+                    }
                 ?>
             </select>
 
