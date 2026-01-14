@@ -1,71 +1,85 @@
-/* Configuración básica */
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
 }
 
-.container {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 400px;
+/* Fondo y contenedor */
+body {
+    background-color: #f0f4f8;
 }
 
+.contenedor {
+    width: 320px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Título */
 h1 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
 }
 
-/* Alineación de select y botón */
-.selector-juego {
-    display: flex;
-    gap: 10px; /* Espacio entre los elementos */
-    margin-bottom: 20px;
-}
-
-select {
-    flex-grow: 1; /* El select ocupa el espacio sobrante */
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.btn-enviar {
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: white;
+/* Botones generales */
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 8px 0;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.2s;
 }
 
-.btn-enviar:hover {
-    background-color: #0056b3;
+/* Colores por tipo de botón */
+.juego, .envioAcceso {
+    background-color: #3b82f6;
 }
 
-/* Estilo para tu div de errores */
-#mensaje-error {
-    color: #d9534f;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    min-height: 1.2rem;
+.juego:hover, .envioAcceso:hover {
+    background-color: #1e40af;
 }
 
+.jugar {
+    background-color: #10b981;
+}
+
+.jugar:hover {
+    background-color: #059669;
+}
+
+.volver {
+    background-color: #f59e0b;
+}
+
+.volver:hover {
+    background-color: #d97706;
+}
+
+/* Historial */
 .historial {
     margin-top: 20px;
-    color: #666;
+    text-align: left;
 }
 
 .historial h3 {
-    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #1e40af;
 }
 
-ul {
-    padding-left: 20px;
+.historial ul {
+    list-style: disc inside;
+}
+
+.historial li {
+    margin-bottom: 4px;
+    color: #333;
 }
