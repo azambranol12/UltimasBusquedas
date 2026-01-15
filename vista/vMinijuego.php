@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="vista/style.css">
 </head>
 <body>
+    <a href="index.php?c=Minijuego&m=generarPdf">Descargar lista</a>
 
     <div class="container">
         <h1>Selecciona un minijuego</h1>
@@ -22,7 +23,6 @@
             <button type="submit" class="btn-enviar">Ir al juego</button>
         </form>
 
-        <div id="mensaje-error"></div>
 
         <hr>
 
